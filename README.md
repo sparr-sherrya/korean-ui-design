@@ -48,6 +48,71 @@ my_project/
 └── README.md         # 项目说明
 `
 
+## 组件文档
+
+### Button 按钮
+
+```js
+import Button from './src/components/button.js';
+
+<Button onClick={handleClick}>点击</Button>
+```
+
+### Input 输入框
+
+```js
+import Input from './src/components/input.js';
+
+<Input placeholder="请输入内容" value={value} onChange={setValue} />
+```
+
+### Card 卡片
+
+```js
+import Card from './src/components/card.js';
+
+<Card title="标题" className="custom-card">卡片内容</Card>
+```
+
+### Toast 消息提示
+
+```js
+import Toast from './src/components/toast.js';
+
+Toast({ type: 'success', message: '保存成功' });
+Toast({ type: 'error', message: '网络异常，请重试' });
+```
+
+### Modal 模态框
+
+```js
+import Modal from './src/components/modal.js';
+
+const modal = Modal({ title: '确认删除', content: '删除后不可恢复' });
+```
+
+### Tabs 标签页
+
+```js
+import Tabs from './src/components/tabs.js';
+
+const tabs = Tabs({
+  items: [
+    { label: '全部', content: '内容一' },
+    { label: '已完成', content: '内容二' }
+  ]
+});
+```
+
+### Spinner 加载指示器
+
+```js
+import { showSpinner, hideSpinner } from './src/components/spinner.js';
+
+const spinner = showSpinner(document.body, { text: '加载中...' });
+hideSpinner(spinner);
+```
+
 ## 设计原则
 
 1. **简洁性** - 界面简洁，操作直观
@@ -93,3 +158,4 @@ MIT License
 - 2025年4月: 添加主题切换功能
 // 最新修复
 - 2025年7月: 性能优化和bug修复
+
