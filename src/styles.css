@@ -241,3 +241,10 @@
 .tabs-panel {
   padding: 8px 0;
 }
+
+// 主题切换时页面背景同步
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
