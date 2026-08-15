@@ -248,3 +248,33 @@ body {
   color: var(--color-text);
   transition: background 0.3s ease, color 0.3s ease;
 }
+
+// 暗色主题下各组件配色
+.dark-theme .modal {
+  background: #242424;
+}
+
+.dark-theme .modal-header {
+  border-bottom-color: var(--color-border);
+}
+
+.dark-theme .modal-close {
+  color: var(--color-text-light);
+}
+
+.dark-theme .toast {
+  background: #111;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme .tabs-tab:hover {
+  color: var(--color-text);
+}
+
+.dark-theme .button {
+  border-color: var(--color-primary);
+}
+
+.dark-theme .card-title {
+  color: var(--color-text);
+}
